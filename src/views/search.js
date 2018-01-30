@@ -3,7 +3,7 @@ var SearchView = Backbone.View.extend({
   el: '.search',
   
   initialize: function () {
-    
+    console.log(this.collection);
   },
   
   render: function() {

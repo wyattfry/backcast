@@ -4,7 +4,8 @@ var VideoPlayerView = Backbone.View.extend({
   
   initialize: function() {
     this.video = this.collection.models[0];
-    this.collection.on('select', function() {
+    this.collection.on('select', function(selectedVideo) {
+      this.video = selectedVideo;
       this.render();
     }, this);
   },
